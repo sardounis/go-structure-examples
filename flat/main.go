@@ -19,6 +19,7 @@ func init() {
 	var err error
 
 	db, err = NewStorage(JSON)
+	// db, err = NewStorage(Memory)
 	if err != nil {
 		log.Fatal(err)
 	}
